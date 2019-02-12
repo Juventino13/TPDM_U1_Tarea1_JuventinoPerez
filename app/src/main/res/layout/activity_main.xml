@@ -7,19 +7,27 @@
     android:orientation="vertical"
     android:gravity="center"
     tools:context=".MainActivity"
-    android:padding="20dp"
+    android:padding="10dp"
 
     android:background="@drawable/pa">
-
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="#NoMeRepruebesBenigno "
+    android:textColor="#673AB7"
+    android:textSize="8dp"
+    android:visibility="invisible"
+    android:id="@+id/nomerepruebes"
+    android:background="#ffff00"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#0F1D100B"
-        android:padding="10dp"
+        android:padding="5dp"
         android:text="GITHUB"
         android:gravity="center"
         android:textColor="#030000"
-        android:textSize="20dp"
+        android:textSize="15dp"
         android:textStyle="bold"
         android:id="@+id/etiqueta" />
     <TextView
@@ -83,7 +91,7 @@ android:id="@+id/apellido"
         android:hint="Contraseña"
         android:ems="8"
         android:id="@+id/contrasena"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="5dp"
         android:inputType="textPassword"
         />
     <Spinner
@@ -93,7 +101,7 @@ android:id="@+id/apellido"
         android:id="@+id/tipo"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="5dp"
         android:background="#46F89797"
         />
 
@@ -123,31 +131,24 @@ android:id="@+id/apellido"
         android:text="Recordar usuario"
         android:textSize="20dp"
         android:id="@+id/check"
-        android:onClick="seleccion"
+        android:onClick="seleccion" />
 
-
-        />
     <Button
+        android:id="@+id/boton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:onClick="validar"
         android:text="Aceptar"
         android:textStyle="bold"
-        android:layout_gravity="center"
-        android:id="@+id/boton"
-        android:onClick="validar"
-android:layout_marginTop="30dp"
         />
 
-    <Switch
-        android:id="@+id/simpleSwitch1"
+
+    <ToggleButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:checked="false"
-        android:text="switch 1"
-        android:textOff="Off"
-        android:textOn="On"
-        android:onClick="toggle"/>
-
-
+        android:id="@+id/toggle"
+        android:textOff="Mensaje oculto"
+        android:textOn="Porfavor"/>
 </LinearLayout>
