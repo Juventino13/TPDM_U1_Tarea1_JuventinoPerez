@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TPDM_U1_Tarea1_JuventinoPerez</string>
+    <string-array name="Tipo">
+        <item>Selecciona...</item>
+       <item>Privado</item>
+        <item>Publico</item>
+    </string-array>
+</resources>

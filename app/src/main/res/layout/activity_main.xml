@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity"
+    android:padding="20dp"
+
+    android:background="@drawable/pa">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0F1D100B"
+        android:padding="10dp"
+        android:text="GITHUB"
+        android:gravity="center"
+        android:textColor="#030000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:id="@+id/etiqueta" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#17160905"
+        android:padding="2dp"
+        android:text="Registro"
+        android:gravity="center"
+        android:id="@+id/registrotext"
+        android:textColor="#B0130101"
+        android:textSize="10dp"
+        android:layout_marginBottom="10dp"
+
+      />
+    <!--galletas -->
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#3C999999"
+        android:hint="Nombre"
+        android:ems="8"
+        android:id="@+id/nombre"
+        android:layout_marginBottom="5dp"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#3C999999"
+        android:hint="Apellido"
+        android:ems="8"
+android:id="@+id/apellido"
+        android:layout_marginBottom="5dp"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#3C999999"
+        android:hint="Correo"
+        android:ems="8"
+        android:id="@+id/correo"
+        android:layout_marginBottom="5dp"
+        android:inputType="textEmailAddress"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#3C999999"
+        android:hint="Numero"
+        android:ems="8"
+        android:id="@+id/num"
+        android:layout_marginBottom="5dp"
+        android:inputType="phone"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#3C999999"
+        android:hint="Contraseña"
+        android:ems="8"
+        android:id="@+id/contrasena"
+        android:layout_marginBottom="10dp"
+        android:inputType="textPassword"
+        />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/Tipo"
+        android:id="@+id/tipo"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="#46F89797"
+        />
+
+    <RadioGroup
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Maestro"
+            android:textSize="15dp"
+            android:onClick="cambioHombre"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Estudiante"
+            android:textSize="15dp"
+            android:onClick="cambioMujer"
+            android:layout_marginBottom="10dp"/>
+
+
+    </RadioGroup>
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recordar usuario"
+        android:textSize="20dp"
+        android:id="@+id/check"
+        android:onClick="seleccion"
+
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aceptar"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:id="@+id/boton"
+        android:onClick="validar"
+android:layout_marginTop="30dp"
+        />
+
+    <Switch
+        android:id="@+id/simpleSwitch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:checked="false"
+        android:text="switch 1"
+        android:textOff="Off"
+        android:textOn="On"
+        android:onClick="toggle"/>
+
+
+</LinearLayout>
